@@ -1,0 +1,58 @@
+.DS_Store
+
+# dotnet core
+bin/
+obj/
+project.lock.json
+NuGetScratch/
+
+api/wwwroot/**
+!api/wwwroot/scratch.html
+!api/wwwroot/favicon.ico
+
+# node
+node_modules/
+typings/
+npm-debug.log
+
+*.swp
+
+# client-react
+client-react/components/*.js
+client-react.test/build
+!client-react.test/build/client-react/styles/
+
+# ops
+ops/hosts
+ops/config.yml
+ops/*.retry
+
+# other
+*.js.map
+
+# IDE
+.idea/
+.vs/
+
+#gitlab-runner
+builds/
+
+#dotnet-trace
+*.speedscope.json
+*.nettrace
+
+#logs
+api/Cheftech.Server/Cheftech.Server/log/*
+api/TestResults
+
+*.csproj.user
+
+application_log.db
+api/LocalAPI/API/OrderWire.Local.API/log/*
+api/CloudAPI/API/OrderWire.Cloud.API/log/*
+
+.sonarqube
+api/Shared/API/OrderWire.Shared.API/OrderWire.Shared.API.csproj.user
+.vscode
+coverage.cobertura.xml
+SonarQube.xml
